@@ -55,7 +55,8 @@ p {
    LAYOUT CONTAINERS
 ================================ */
 .container {
-  width: 100%;
+  width: 60%;
+  margin-left:300px;
   padding: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color:#757c88;
@@ -70,7 +71,7 @@ p {
 @media (min-width: 768px) {
   .container {
     max-width: 1900px;
-    margin: auto;
+    /*margin: auto;*/
   }
 
   section p {
@@ -79,7 +80,9 @@ p {
 }
 
 .con {
-  background-color: #ffffff;
+  width: 60%;
+  margin-left:300px;
+  background-color: #ffffff; 
 }
 
 section {
@@ -90,8 +93,10 @@ section {
    HEADER & NAVIGATION
 ================================ */
 header {
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
+   background: rgba(255, 255, 255, 0.15); /* Transparent white */
+  backdrop-filter: blur(10px);            /* Glass blur */
+  -webkit-backdrop-filter: blur(10px);    /* Safari support */
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -104,10 +109,11 @@ header {
 .nav-container {
   max-width: 100%;
   margin: auto;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem 10rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 70px;
 }
 
 /* LOGO */
@@ -116,21 +122,29 @@ header {
 }
 
 .logo a {
-  font-family: 'Trebuchet MS', Arial, sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #00d9ff;
+  font-family: "Saira Stencil", sans-serif;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #012b62;
 }
+
+
+
 
 /* NAV LINKS (DESKTOP) */
 .nav-links {
   display: flex;
+  gap: 40px;
   align-items: center;
 }
 
 .nav-links a {
+  font-family: "Saira Stencil", sans-serif;
   margin: 0 0.8rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #333;
 }
 
