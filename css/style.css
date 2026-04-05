@@ -165,34 +165,35 @@ header {
 }
 
 /* ================================
-   MOBILE NAVIGATION
+   MOBILE FIX
 ================================ */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
+
+  .container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
   }
 
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 4px;
-    width: 60%;
-    background: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  .con {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .nav-links a {
-    margin: 0.8rem 0;
-    font-size: 1.1rem;
+  .nav-container {
+    padding: 1rem 1.5rem;
   }
 
-  .nav-links.active {
-    display: flex;
+  .logo a {
+    font-size: 1.6rem;
   }
+
+  body {
+    font-size: 1rem;
+  }
+
 }
 
 /* ================================
