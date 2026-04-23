@@ -55,17 +55,26 @@ p {
    LAYOUT CONTAINERS
 ================================ */
 .container {
-  width: 60%;
-  margin-left:300px;
+  width: 100%;
+  margin-left:70px;
   padding: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:#757c88;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:#010101;
 }
 
 
 .container_1{
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color:#757c88; 
+   width: 100%;
+  margin-left:70px;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:#010101; 
 }
 
 @media (min-width: 768px) {
@@ -81,7 +90,7 @@ p {
 
 .con {
   width: 60%;
-  margin-left:300px;
+  margin-left:80px;
   background-color: #ffffff; 
 }
 
@@ -93,7 +102,7 @@ section {
    HEADER & NAVIGATION
 ================================ */
 header {
-   background: rgba(255, 255, 255, 0.15); /* Transparent white */
+  background: rgba(255, 255, 255, 0.15); /* Transparent white */
   backdrop-filter: blur(10px);            /* Glass blur */
   -webkit-backdrop-filter: blur(10px);    /* Safari support */
   border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -109,7 +118,7 @@ header {
 .nav-container {
   max-width: 100%;
   margin: auto;
-  padding: 1.2rem 10rem;
+  padding: 1.2rem 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
